@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     
     public void TakeDamage(float damage)
     {
+        BroadcastMessage("OnDamageTaken");
         hitPoints -= Mathf.Abs(damage);
         if (hitPoints <= 0)
         {
