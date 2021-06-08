@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5300377590004675471}
   - component: {fileID: 7956257574032738117}
   - component: {fileID: 7674766801709691538}
+  - component: {fileID: 4235436855614406001}
   m_Layer: 0
   m_Name: assault
   m_TagString: Untagged
@@ -101,6 +102,25 @@ MonoBehaviour:
   shootVFX: {fileID: 7762096851385416091}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}
+  reloadDelay: 0.5
+--- !u!114 &4235436855614406001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8460771027953395344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cdb976b5c54e94a9629db2e8fd8362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraView: {fileID: 0}
+  fpsController: {fileID: 0}
+  zoomedIn: 20
+  zoomedOut: 60
+  sensitivityZoomedIn: {x: 0.5, y: 0.5}
+  sensitivityZoomedOut: {x: 2, y: 2}
 --- !u!1001 &4919702631017799614
 PrefabInstance:
   m_ObjectHideFlags: 0

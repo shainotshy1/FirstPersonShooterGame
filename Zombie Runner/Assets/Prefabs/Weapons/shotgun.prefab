@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4357328072837429211}
   - component: {fileID: 1989642715735720721}
   - component: {fileID: 3311259755776653421}
+  - component: {fileID: 6522727328322923496}
   m_Layer: 0
   m_Name: shotgun
   m_TagString: Untagged
@@ -101,6 +102,25 @@ MonoBehaviour:
   shootVFX: {fileID: 675738808322861176}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}
+  reloadDelay: 2
+--- !u!114 &6522727328322923496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44013390664868548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cdb976b5c54e94a9629db2e8fd8362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraView: {fileID: 0}
+  fpsController: {fileID: 0}
+  zoomedIn: 30
+  zoomedOut: 60
+  sensitivityZoomedIn: {x: 0.5, y: 0.5}
+  sensitivityZoomedOut: {x: 2, y: 2}
 --- !u!1001 &2782800508372913757
 PrefabInstance:
   m_ObjectHideFlags: 0

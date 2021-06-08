@@ -182,7 +182,6 @@ GameObject:
   - component: {fileID: 6822803795691690928}
   - component: {fileID: 1726556016993242342}
   - component: {fileID: 3136905431629920631}
-  - component: {fileID: 812770728}
   - component: {fileID: 5952991890464828106}
   m_Layer: 0
   m_Name: Player
@@ -331,23 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &812770728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6822803795698757202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3cdb976b5c54e94a9629db2e8fd8362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraView: {fileID: 6822803795698822260}
-  zoomedIn: 18
-  zoomedOut: 60
-  sensitivityZoomedIn: {x: 0.5, y: 0.5}
-  sensitivityZoomedOut: {x: 2, y: 2}
 --- !u!114 &5952991890464828106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +383,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 30974969108065249}
     m_Modifications:
+    - target: {fileID: 4235436855614406001, guid: 4a834acc4d5ce8f4da16675fd805695f, type: 3}
+      propertyPath: cameraView
+      value: 
+      objectReference: {fileID: 6822803795698822260}
+    - target: {fileID: 4235436855614406001, guid: 4a834acc4d5ce8f4da16675fd805695f, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 6822803795691690928}
     - target: {fileID: 7674766801709691538, guid: 4a834acc4d5ce8f4da16675fd805695f, type: 3}
       propertyPath: FPCamera
       value: 
@@ -555,6 +545,14 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5952991890464828106}
+    - target: {fileID: 6522727328322923496, guid: a56ed4ebba3aa8d4f9899b5357632473, type: 3}
+      propertyPath: cameraView
+      value: 
+      objectReference: {fileID: 6822803795698822260}
+    - target: {fileID: 6522727328322923496, guid: a56ed4ebba3aa8d4f9899b5357632473, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 6822803795691690928}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56ed4ebba3aa8d4f9899b5357632473, type: 3}
 --- !u!4 &3823220265130391687 stripped
@@ -629,6 +627,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 3907068644361596976, guid: d2f6e449fa88bb9428443f25b610859f, type: 3}
+      propertyPath: cameraView
+      value: 
+      objectReference: {fileID: 6822803795698822260}
+    - target: {fileID: 3907068644361596976, guid: d2f6e449fa88bb9428443f25b610859f, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 6822803795691690928}
     - target: {fileID: 4556566451650986533, guid: d2f6e449fa88bb9428443f25b610859f, type: 3}
       propertyPath: FPCamera
       value: 

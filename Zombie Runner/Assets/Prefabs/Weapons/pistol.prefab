@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2251702167868569757}
   - component: {fileID: 4096956766206069847}
   - component: {fileID: 4556566451650986533}
+  - component: {fileID: 3907068644361596976}
   m_Layer: 0
   m_Name: pistol
   m_TagString: Untagged
@@ -101,6 +102,25 @@ MonoBehaviour:
   shootVFX: {fileID: 2056134655522206922}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}
+  reloadDelay: 1
+--- !u!114 &3907068644361596976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583847965134630274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cdb976b5c54e94a9629db2e8fd8362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraView: {fileID: 0}
+  fpsController: {fileID: 0}
+  zoomedIn: 20
+  zoomedOut: 60
+  sensitivityZoomedIn: {x: 0.5, y: 0.5}
+  sensitivityZoomedOut: {x: 2, y: 2}
 --- !u!1001 &3708170169665377007
 PrefabInstance:
   m_ObjectHideFlags: 0
