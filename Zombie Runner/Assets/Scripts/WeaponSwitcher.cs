@@ -36,7 +36,7 @@ public class WeaponSwitcher : MonoBehaviour
         int previousWeapon = currentWeapon;
 
         ProcessKeyInput();
-        //ProcessScrollWheel();
+        ProcessScrollWheel();
         if (previousWeapon != currentWeapon)
         {
             SetWeaponActive();
@@ -45,7 +45,19 @@ public class WeaponSwitcher : MonoBehaviour
 
     private void ProcessScrollWheel()
     {
-        throw new NotImplementedException();
+        float input = Input.GetAxis("Mouse ScrollWheel");
+        if (input!=0)
+        {
+            currentWeapon += (int)(input / Mathf.Abs(input));
+            if (currentWeapon > transform.childCount - 1)
+            {
+                currentWeapon = 0;
+            }
+            else if (currentWeapon < 0)
+            {
+                currentWeapon = transform.childCount - 1;
+            }
+        }
     }
 
     private void ProcessKeyInput()
