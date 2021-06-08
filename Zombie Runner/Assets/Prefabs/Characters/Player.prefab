@@ -182,6 +182,8 @@ GameObject:
   - component: {fileID: 6822803795691690928}
   - component: {fileID: 1726556016993242342}
   - component: {fileID: 3136905431629920631}
+  - component: {fileID: 812770728}
+  - component: {fileID: 5952991890464828106}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -329,6 +331,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &812770728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822803795698757202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cdb976b5c54e94a9629db2e8fd8362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraView: {fileID: 6822803795698822260}
+  zoomedIn: 18
+  zoomedOut: 60
+  sensitivityZoomedIn: {x: 0.5, y: 0.5}
+  sensitivityZoomedOut: {x: 2, y: 2}
+--- !u!114 &5952991890464828106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822803795698757202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da86416dda233241836d9da8a19e186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8329523752508772475
 GameObject:
   m_ObjectHideFlags: 0

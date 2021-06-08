@@ -10,11 +10,16 @@ public class Weapon : MonoBehaviour
     [SerializeField] float damage = 20f;
     [SerializeField] ParticleSystem shootVFX;
     [SerializeField] GameObject hitImpactVFX;
+    [SerializeField] Ammo ammoSlot;
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            if (ammoSlot.AmmoAmount > 0)
+            {
+                ammoSlot.ReduceAmmoAmount(1);
+                Shoot();
+            }
         }
     }
 
