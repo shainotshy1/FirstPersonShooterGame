@@ -1317,6 +1317,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 90d8e09703679534295bd2cacb73d6de, type: 3}
   m_PrefabInstance: {fileID: 1371706311}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &241946729 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4015512191127824513, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
+  m_PrefabInstance: {fileID: 6822803796160647058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &242565685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,6 +4552,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc, type: 3}
+--- !u!20 &833863293 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6822803795698822260, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
+  m_PrefabInstance: {fileID: 6822803796160647058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &838349383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
@@ -10324,14 +10334,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1381117418964138132, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 833863293}
+    - target: {fileID: 1381117418964138132, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 6822803796160647059}
+    - target: {fileID: 1381117418964138132, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
+      propertyPath: shootVFX
+      value: 
+      objectReference: {fileID: 241946729}
     - target: {fileID: 3136905431629920631, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 570962793}
-    - target: {fileID: 6780690561748960015, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
-      propertyPath: ammoSlot
-      value: 
-      objectReference: {fileID: 6822803796160647059}
     - target: {fileID: 6822803795698266742, guid: 61f5acbe6fb5b0049b13e0768f50f0c2, type: 3}
       propertyPath: m_RootOrder
       value: 1
