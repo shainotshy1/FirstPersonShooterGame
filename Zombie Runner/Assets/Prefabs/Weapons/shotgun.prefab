@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 100
-  damage: 20
+  range: 10
+  damage: 70
   shootVFX: {fileID: 675738808322861176}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}

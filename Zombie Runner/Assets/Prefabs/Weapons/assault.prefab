@@ -97,12 +97,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 100
+  range: 50
   damage: 20
   shootVFX: {fileID: 7762096851385416091}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}
-  reloadDelay: 0.5
+  reloadDelay: 1
 --- !u!114 &4235436855614406001
 MonoBehaviour:
   m_ObjectHideFlags: 0
