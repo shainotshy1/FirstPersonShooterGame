@@ -13,12 +13,19 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
     }
     void Update()
     {
+        if (health.GetIsDead()) 
+        {
+            navMeshAgent.enabled = false;
+            enabled = false;
+        }
         distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
         if (isProvoked)
         {
@@ -65,7 +72,6 @@ public class EnemyAI : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime*turnSpeed);
-        //transform.rotation = where the targe is, we need to rotate at a certain speed
     }
 
     private void OnDrawGizmosSelected()
