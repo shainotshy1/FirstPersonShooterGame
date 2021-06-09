@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem shootVFX;
     [SerializeField] GameObject hitImpactVFX;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
     [SerializeField] float reloadDelay = 0.5f;
 
     bool canShoot = true;
@@ -22,7 +23,7 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)&&canShoot&& ammoSlot.AmmoAmount > 0)
+        if (Input.GetMouseButtonDown(0) && canShoot && ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
             StartCoroutine(Shoot());
         }
@@ -31,7 +32,7 @@ public class Weapon : MonoBehaviour
     private IEnumerator Shoot()
     {
         canShoot = false;
-        ammoSlot.ReduceAmmoAmount(1);
+        ammoSlot.ReduceAmmoAmount(ammoType,1);
         PlayMuzzleFlash();
         ProcessRayCast();
         yield return new WaitForSeconds(reloadDelay);

@@ -102,6 +102,7 @@ MonoBehaviour:
   shootVFX: {fileID: 675738808322861176}
   hitImpactVFX: {fileID: 4063309724874475333, guid: 6752d72c47f066749837213e42344617, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 1
   reloadDelay: 2
 --- !u!114 &6522727328322923496
 MonoBehaviour:
