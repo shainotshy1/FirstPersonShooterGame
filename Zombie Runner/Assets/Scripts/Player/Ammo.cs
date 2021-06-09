@@ -20,9 +20,17 @@ public class Ammo : MonoBehaviour
     }
     public void ReduceAmmoAmount(AmmoType ammoType,int decrease)
     {
+        ChangeAmmoAmount(ammoType, -1*Mathf.Abs(decrease));
+    }
+    public void IncreaseAmmoAmount(AmmoType ammoType, int increase)
+    {
+        ChangeAmmoAmount(ammoType, Mathf.Abs(increase));
+    }
+    private void ChangeAmmoAmount(AmmoType ammoType, int delta)
+    {
         AmmoSlot ammoSlot = GetAmmoSlot(ammoType);
 
-        ammoSlot.ammoAmount -= Mathf.Abs(decrease);
+        ammoSlot.ammoAmount += Mathf.Abs(delta);
     }
     private AmmoSlot GetAmmoSlot(AmmoType ammoType)
     {
