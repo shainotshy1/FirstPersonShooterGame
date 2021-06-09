@@ -9,7 +9,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Start()
     {
-        target = FindObjectOfType<PlayerHeatlh>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHeatlh>();
     }
 
     public void AttackHitEvent()

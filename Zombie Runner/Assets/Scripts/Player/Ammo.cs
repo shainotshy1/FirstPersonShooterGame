@@ -30,7 +30,7 @@ public class Ammo : MonoBehaviour
     {
         AmmoSlot ammoSlot = GetAmmoSlot(ammoType);
 
-        ammoSlot.ammoAmount += Mathf.Abs(delta);
+        ammoSlot.ammoAmount += delta;
     }
     private AmmoSlot GetAmmoSlot(AmmoType ammoType)
     {
