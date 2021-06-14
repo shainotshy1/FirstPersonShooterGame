@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 1726556016993242342}
   - component: {fileID: 3136905431629920631}
   - component: {fileID: 5952991890464828106}
-  - component: {fileID: 8888429258572937236}
+  - component: {fileID: 3798055301842720472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -351,7 +351,7 @@ MonoBehaviour:
     ammoAmount: 20
   - ammoType: 2
     ammoAmount: 8
---- !u!114 &8888429258572937236
+--- !u!114 &3798055301842720472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6822803795698757202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb942725220ff749af5efa0b363fb70, type: 3}
+  m_Script: {fileID: 11500000, guid: dbe42adef50eeb14a9ed3ca9a62d526f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8329523752508772475
